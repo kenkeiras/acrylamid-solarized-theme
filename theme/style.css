@@ -1,0 +1,300 @@
+/* General style */
+html{
+  height: 100%;
+}
+
+body {
+  font-family: "lucida sans", arial, sans-serif;
+  padding: 0px;
+  margin: 0px;
+  background: #002b36;
+  color: #839496;
+}
+
+bold, strong {
+    color: #93a1a1;
+}
+
+p {
+  margin: 0px;
+  padding: 0px 0px 16px 0px;
+  line-height: 1.7em;
+}
+
+#main, #logo, nav, #site_content, footer {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1, h2, h3, h4 {
+  font-size: 130%;
+  padding: 7px 0px 5px 0px;
+  margin: 0px 0px 12px 0px;
+  font-weight: normal;
+  color: #93a1a1;
+  font-family: serif;
+}
+
+h1, h3 {
+  margin: 10px 0px 20px 0px;
+  padding: 5px 20px 5px 0px;
+  border-bottom: 1px solid #CCC6B4;
+}
+
+a, a:hover {
+    outline: none;
+    color: #93a1a1;
+    text-decoration: none;
+}
+
+a:hover {
+  color: #93a1a1;
+}
+
+img {
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Quotes */
+blockquote {
+  margin: 20px 0px 20px 0px;
+  padding: 10px 20px 0px 20px;
+  border: 1px solid #657b83;
+  border-left: 5px solid #657b83 !important;
+  background: #073642;
+  pre-wrap: wrap;
+  width: 90ex;
+  color: #93a1a1;
+}
+
+/* Lists */
+ul {
+  margin: 2px 0px 18px 16px;
+  padding: 0px;
+}
+
+ul li {
+  list-style-type: square;
+  margin: 0px 0px 6px 0px;
+  padding: 0px;
+}
+
+ol {
+  margin: 8px 0px 0px 24px;
+  padding: 0px;
+}
+
+ol li {
+  margin: 0px 0px 11px 0px;
+  padding: 0px;
+}
+
+/* Header */
+body > div > header {
+    border-bottom: #859900 solid 1px;
+    margin-bottom: 1ex;
+}
+
+#logo {
+  margin-left: 2em;
+  margin-right: 2em;
+  padding-bottom: 2px;
+}
+
+#logo #title {
+    font-size: xx-large;
+}
+
+#logo #title,#logo #sitename {
+  font: normal 300%, monospace, sans;
+  border-bottom: 0;
+  text-transform: none;
+  margin: 0 0 0 9px;
+}
+
+#logo_text, #logo_text a,#logo_text a:hover {
+  padding: 5px 0 0 0;
+  color: #93a1a1;
+  text-decoration: none;
+}
+
+#logo_text a .logo_colour {
+  color: #93a1a1;
+}
+
+#logo_text a:hover .logo_colour {
+  color: #93a1a1;
+}
+
+#logo h1,#logo #sitename {
+  margin: 0;
+  font-family: sans, monospace;
+}
+
+#logo #title {
+  font-size: 300%;
+  padding: 5px 0px 0px 0px;
+  color: #777;
+}
+
+#logo a {
+  border: none;
+}
+
+nav {
+  height: 2ex;
+  display: inline;
+}
+
+nav ul {
+    margin: 0px;
+    display: inline;
+    text-aling: right;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav ul li {
+  margin: 0 0 0 0;
+  list-style: none;
+  padding-left: 1em;
+  display: inline;
+}
+
+nav ul li > * {
+  letter-spacing: 0.1em;
+  font-family: serif;
+  font-size: 100%;
+  display: inline;
+  height: 20px;
+  text-decoration: none;
+  border: none;
+}
+
+nav ul li > * > a {
+  font-style: italic;
+}
+
+nav ul li.selected > * {
+  height: 20px;
+  padding: 7px 5px 4px 16px;
+}
+
+nav ul li a:hover {
+  font-weight: bolder;
+}
+
+/* Content */
+#site_content {
+  width: 100ex;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+#content {
+  text-align: justify;
+  width: 100ex;
+  float: left;
+  padding: 20px 10px 15px 0px;
+}
+
+#content a {
+  color: #93a1a1;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#content img {
+  border: none;
+  max-width: 400px;
+}
+
+table {
+  margin: 10px 0 30px 0;
+}
+
+
+.floatright {
+  float: right;
+}
+
+.floatleft {
+  float: left;
+}
+
+sup {
+  font-weight: bold;
+}
+
+
+/* Article parts */
+article > header time {
+  padding: 5px 0px 5px 0px;
+  float: right;
+  clear: both;
+}
+
+#content > article a.archive_entry {
+  text-decoration: none;
+}
+
+#content > article a {
+  text-decoration: underline;
+}
+
+#content > article a.anchor {
+  text-decoration: none;
+}
+
+#content > article > header a, #content > article > footer a {
+  text-decoration: none;
+}
+
+/* Footer */
+body > div > footer {
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 90%;
+  min-height: 20px;
+  padding: 5px 0px 4px 0px;
+  text-align: center;
+  background: #313131;
+  color: #A8AA94;
+  border-top: 4px solid #BABABA;
+  letter-spacing: 0.1em;
+}
+
+body > div > footer a {
+  color: #A8AA94;
+  text-decoration: none;
+}
+
+body > div > footer a:hover {
+  color: #FFF;
+  text-decoration: none;
+}
+
+
+/* Code highlight */
+.highlighttable {
+    background: #073642;
+    overflow: auto;
+    min-width: 100%;
+}
+
+.highlight {
+    width: auto;
+    padding-left: 0.5ex;
+}
+
+.linenos {
+    padding-right: 0.5ex;
+    background-color: #073642;
+    width: 1%;
+}
+
+.linenodiv > pre, .highlight > pre {
+    display: inline;
+}

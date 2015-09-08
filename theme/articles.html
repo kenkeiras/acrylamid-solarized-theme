@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %} Archive{% endblock %}
+
+{% block content %}
+<article>
+  {% set year = -1 %}
+  {% for key, months in articles.items() | sort(reverse=True) %}
+
+  {% if year != key[0] %}
+  {% set year = key[0] %}
+  <h1 class="archive_year">{{ key[0] }}</h1>
+  {% endif %}
+  <h2 class="archive_month">{{ months[0].date.strftime('%B')}}</h2>
+  <table>
+    <tbody>
+      {% for entry in months %}
+      <tr><td>{{ entry.date.day }}</td>
+        <td><a class="archive_entry" href="{{ env.path + entry.permalink }}" rel="bookmark canonical">{{ entry.title | e }}</a></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% endfor %}
+</article>
+{% endblock %}

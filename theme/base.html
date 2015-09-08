@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="{{ entry.lang if entry else conf.lang }}">
+
+<head>
+  {% block head -%}
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>{{ conf.title | first }} {{ conf.title | last }} -- {% block title %}{% endblock %}</title>
+  <link media="all" href="{{ env.path + '/style.css' }}" rel="stylesheet" />
+  <link media="all" href="{{ env.path + '/highlight.css' }}" rel="stylesheet" />
+  <link href="/favicon.ico" rel="shortcut icon" />
+    {% if 'sitemap' in env.views -%}
+        <link href="{{ env.views.sitemap.path }}" type="application/xml" title="Sitemap">
+    {%- endif%}
+  <link href="{{ env.path + '/' }}" rel="home start" />
+  <link href="{{ env.path + '/atom/' }}" type="application/atom+xml" rel="alternate" title="Atom Feed" />
+  <link href="{{ env.path + '/rss/' }}" type="application/rss+xml" rel="alternate" title="RSS Feed" />
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  {%- endblock %}
+</head>
+
+<body>
+  <div id="main">
+    <header>
+      <span id="logo">
+        <span id="logo_text">
+          <span id="title"><a href="{{ env.path + '/' }}" rel="home start">
+              <span class="logo_colour">{{ conf.title | first }}</span>
+              {{ conf.title | last }}
+          </a></span>
+          <!-- {{ conf.sitename }} -->
+        </span>
+      </span>
+      <nav>
+        <ul>
+          <li><a href="{{ env.path + '/' }}" rel="home start">Blog</a>
+              <span class="helper">
+                  [<a href="{{ env.path + '/' }}" rel="home start">es</a> <a>/</a>
+                   <a href="{{ env.path + '/en' }}" rel="home start">en</a>]
+              </span>
+          </li>
+          <li><a href="{{ env.path + '/rss/' }}" rel="alternate">RSS</a></li>
+          <li><a href="{{ env.path + '/articles/' }}" rel="contents">Archive</a></li>
+          <li><a href="{{ env.path + '/contact/' }}" rel="contact">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="content_header"></div>
+    <div id="site_content">
+      <div id="content">
+      {%- block content -%}
+      {%- endblock -%}
+      </div>
+    </div>
+  </div>
+</body>
+</html>
