@@ -43,7 +43,7 @@ h1, h3 {
 
 a, a:hover {
     outline: none;
-    color: #eee8d5;
+    color: #444444;
     text-decoration: none;
 }
 
@@ -89,9 +89,9 @@ ol li {
 
 /* Header */
 body > div > header {
-    border-bottom: 1px solid #deff00;
+    border-bottom: 1px solid #1a4666;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
-    background-color: #002b36;
+    background-color: #eee8d5;
     margin-bottom: 1ex;
 }
 
@@ -114,16 +114,16 @@ body > div > header {
 
 #logo_text, #logo_text a,#logo_text a:hover {
   padding: 5px 0 0 0;
-  color: #eee8d5;
+  color: #1a4666;
   text-decoration: none;
 }
 
 #logo_text a .logo_colour {
-  color: #eee8d5;
+  color: #1a4666;
 }
 
 #logo_text a:hover .logo_colour {
-  color: #eee8d5;
+  color: #1a4666;
 }
 
 #logo h1,#logo #sitename {
@@ -271,7 +271,7 @@ body > div > footer a {
 }
 
 body > div > footer a:hover {
-  color: #eee8d5;
+  color: #444444;
   text-decoration: none;
 }
 
